@@ -1,0 +1,39 @@
+.popcorn-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.popcorn {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 10px rgba(255, 193, 7, 0.5));
+}
+
+.film-reel-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.film-reel {
+  position: absolute;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.3));
+  will-change: transform;
+}
+
+.film-reel svg {
+  display: block;
+}

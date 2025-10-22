@@ -1,0 +1,61 @@
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.section-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.section-banner-content {
+  text-align: center;
+  max-width: 900px;
+}
+
+.section-banner-title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ff6ec7 0%, #7ed6df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.section-banner-subtitle {
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  opacity: 0.9;
+}
+
+/* Themes */
+.theme-movies {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1625 50%, #2d1b3d 100%);
+}
+.theme-products {
+  background: linear-gradient(135deg, #1a1625 0%, #0f0f1e 50%, #0a0a0f 100%);
+}
+.theme-features {
+  background: linear-gradient(135deg, #2d1b3d 0%, #1a1625 50%, #0f0f1e 100%);
+}
+.theme-default {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1625 50%, #2d1b3d 100%);
+}
+
+@media (max-width: 768px) {
+  .section-banner-title {
+    font-size: 2.3rem;
+  }
+  .section-banner-subtitle {
+    font-size: 1.05rem;
+  }
+}
+
+
