@@ -19,7 +19,7 @@ const Hero = () => {
             yPercent: 100,
             duration: 1.8,
             ease: 'expo.out',
-            stagger: 0.12,
+            stagger: 0.10,
         });
 
         gsap.from(paragraphSplit.lines, {
@@ -41,7 +41,7 @@ const Hero = () => {
         })
 
         const startValue = isMobile ? 'top 50%' : 'center 60%';
-        const endValue = isMobile ? 'top 120%' : 'bottom top';
+        const endValue = isMobile ? 'top 150%' : 'bottom+=100 top';
 
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -61,22 +61,24 @@ const Hero = () => {
     return (
         <>
             <section id="hero" className="noisy">
+                <div className="absolute inset-0 opacity-50"></div>
+
                 <h1 className="title">Cinetugal</h1>
 
                 <div className="body">
                     <div className="content">
                         <div className="space-y-5 hidden md:block">
-                            <p>Cool.  Crisp. Classic.</p>
+                            <p>O retro no futuro</p>
                             <p className="subtitle">
-                                Sip the Spirit <br /> of Summer
+                              O Cinema Favorito <br /> dos Portugueses
                             </p>
                         </div>
 
                         <div className="view-cocktails">
                             <p className="subtitle">
-                                Every cocktail on our menu is a blend of premium ingredients, creative flair, and timeless recipes -designed to delight your senses.
+                                Os teus clássicos favoritos disponíveis num só lugar.
                             </p>
-                            <a href="/cocktails">View Cocktails</a>
+                            <a href="#classic-movies">Ver Filmes</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +86,7 @@ const Hero = () => {
             <div className="video absolute inset-0">
                 <video
                     ref={videoRef}
-                    src="/videos/popcorn3.mp4"
+                    src="/videos/popcorn.mp4"
                     muted
                     playsInline
                     preload="auto"

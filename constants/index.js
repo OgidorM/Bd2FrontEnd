@@ -1,19 +1,19 @@
 const navLinks = [
     {
-        id: "cocktails",
-        title: "Cocktails",
+        id: "classic-movies",
+        title: "Filmes",
     },
     {
         id: "about",
-        title: "About Us",
+        title: "Sobre Nós",
     },
     {
         id: "work",
-        title: "The Art",
+        title: "A Nossa Loja",
     },
     {
         id: "contact",
-        title: "Contact",
+        title: "Contacto",
     },
 ];
 
